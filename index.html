@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2016创新工坊报名表</title>
+<!-- for-mobile-apps -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="2016创新工坊报名表" />
+<!-- //for-mobile-apps -->
+<!--<link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>-->
+<!--<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>-->
+<link rel="stylesheet" href="css/j-forms.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<div class="content">
+		<h2>电子科技大学信软学院</h2>
+		<h1>2016年创新工坊报名表</h1>
+		<div class="main w3l">
+			<form class="contact-forms wthree">
+				<!-- 姓名 家乡-->
+				<div class="first-line agileits">
+					<div class="span6 main-row">
+						<div class="input">
+							<input type="text" id="name" name="name" placeholder="姓名" required="">
+						</div>
+					</div>
+					<div class="span6 main-row">
+						<div class="input">
+							<input type="text" id="hometown" name="hometown" placeholder="家乡" required="">
+						</div>
+					</div>
+				</div>
+				<!-- 邮箱 电话 -->
+				<div class="first-line agileits">
+					<div class="span6 main-row">
+						<div class="input">
+							<input type="email" placeholder="Email" id="email" name="email" required="">
+						</div>
+					</div>
+					<div class="span6 main-row">
+						<div class="input">
+							<input type="text" placeholder="电话" id="phone" name="phone" required="">
+						</div>
+					</div>
+				</div>
+				<div class="main-row">
+					<label class="input select">
+						<select name="sex">
+							<option value="none" selected disabled="">性别</option>
+							<option value="male">汉子</option>
+							<option value="female"> 妹子</option>
+						</select>
+						<i></i>
+					</label>
+				</div>
+				<!-- 方向 -->
+				<div class="main-row">
+					<label class="input select">
+						<select name="profession">
+							<option value="none" selected="" disabled="">方向</option>
+							<option value="1">软件技术</option>
+							<option value="2">嵌入式</option>
+							<option value="3">大型主机</option>
+							<option value="4">网络安全</option>
+							<option value="5">数漫</option>
+						</select>
+						<i></i>
+					</label>
+				</div>
+				<!-- 年级 -->
+				<div class="main-row">
+					<label class="input select">
+						<select name="grade">
+							<option value="none" selected disabled="">年级</option>
+							<option value="2013"> 2013</option>
+							<option value="2014"> 2014</option>
+							<option value="2015"> 2015</option>
+							<option value="2016"> 2016</option>
+						</select>
+						<i></i>
+					</label>
+				</div>
+				<!-- 感兴趣的技术方向 -->
+				<div class="first-line agileits">
+					<div class="span8 main-row">
+						<div class="input">
+							<input type="text" id="tech" placeholder="感兴趣的技术方向" name="tech" required="">
+							<span class="tooltip tooltip-right-top">不想当梦想家的程序猿可不是好工程师哦~</span>
+						</div>
+					</div>
+				</div>
+				<!-- 奖项 -->
+				<div class="main-row">
+					<div class="input">
+						<input type="text" id="awards" placeholder="目前职位/获得过的奖项" name="awards" required="">
+						<span class="tooltip tooltip-right-top">突出你的能力~比如说各种各样的超能力~</span>
+					</div>
+				</div>
+				<!-- 个人陈述 -->
+				<div class="main-row">
+					<div class="input">
+						<textarea placeholder="个人陈述" spellcheck="false" name="introduce" required=""></textarea>
+							<span class="tooltip tooltip-right-top">只需要展现出最真实的自己、最真实的想法就好啦~</br>如果内容较长请在笔记中写好后再粘贴=w=</span>
+					</div>
+				</div>
+				<!-- start files -->
+				<!-- end files -->
+
+			<!-- end /.content -->
+				<div class="footer">
+					<button type="submit" class="primary-btn">发送</button>
+					<button type="reset" class="secondary-btn">重置</button>
+				</div>
+				<!-- end /.footer -->
+
+			</form>
+		</div>
+		<p class="copy_rights">&copy; 2016.电子科技大学 信息与软件工程学院 EPIC All rights reserved. </p>
+	</div>
+	<!-- Scripts -->
+	<script src="js/jquery.1.11.1.min.js"></script>
+	<!--[if lt IE 10]>
+			<script src="j-folder/js/jquery.placeholder.min.js"></script>
+		<![endif]-->
+	<script>
+		$(document).ready(function(){
+			// Phone masking
+			$('#phone').mask('(999) 999-9999', {placeholder:'x'});
+			// Post code masking
+			$('#post').mask('999-9999', {placeholder:'x'});
+		});
+	</script>
+</body>
+</html>

@@ -29,11 +29,34 @@ margin:0;
     background-size: cover;
     height: 100%;
 	font-family: 'Open Sans', sans-serif !important;
+	z-index:-100;
 }
 
 h1,h2,h3,h4,h5,h6{
 	margin:0;	
 }	
+h1{
+	font-family: "microsoft yahei";
+	font-size: 2em;
+	color: white;
+}
+.center{
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	width: 32%;
+    margin: 100px auto;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 30px 30px;
+    z-index:10000;
+}
+.hello{
+	font-size: 1em;
+	color: white;
+}
+.hi{
+	width: 40%;
+	margin: 0 auto;
+}
 p{
 	margin:0;
 }
@@ -89,6 +112,9 @@ p.copy_rights a{
 p.copy_rights a:hover{
 	text-decoration:underline;
 }
+
+
+
 /*-- responsive media queries --*/
 
 @media (max-width: 1440px){
@@ -97,16 +123,24 @@ p.copy_rights a:hover{
 @media (max-width: 1366px){
 	.main {
 		width: 34%;
+	}
+	.center {
+		width: 34%;
 	}	
 }
 @media (max-width: 1280px){
 	.main {
-			 /*-- agileits --*/
 		width: 37%;
 	}	
+	.center {
+		width: 37%;
+	}
 }
 @media (max-width: 1080px){
 	.main {
+		width: 41%;
+	}
+	.center {
 		width: 41%;
 	}	
 }
@@ -115,6 +149,10 @@ p.copy_rights a:hover{
 		font-size: 35px;
 	}
 	.main {
+		padding: 23px 23px;
+		width: 45%;
+	}
+	.center {
 		padding: 23px 23px;
 		width: 45%;
 	}	
@@ -130,12 +168,18 @@ p.copy_rights a:hover{
 	}
 	.main {
 		width: 51%;
+	}
+	.center {
+		width: 51%;
 	}	
 }
 @media (max-width: 768px){
 	.main {
 		width: 66%;
 	}	
+	.center {
+		width: 66%;
+	}
 }
 @media (max-width: 736px){
 	
@@ -148,6 +192,9 @@ p.copy_rights a:hover{
 }
 @media (max-width: 600px){
 	.main {
+		width: 74%;
+	}
+	.center {
 		width: 74%;
 	}	
 }
@@ -170,6 +217,9 @@ p.copy_rights a:hover{
 		font-size: 27px;
 	}
 	.main {
+		margin: 33px auto;
+	}
+	.center {
 		margin: 33px auto;
 	}
 	.contact-forms .primary-btn, .contact-forms .secondary-btn {
@@ -202,6 +252,9 @@ p.copy_rights a:hover{
 	.main {
 		width: 80%;
 	}
+	.center {
+		width: 80%;
+	}
 	.contact-forms .input textarea {
 		height: 90px;
 	}
@@ -214,6 +267,10 @@ p.copy_rights a:hover{
 		padding: 40px 0;
 	}	
 	.main {
+		padding: 12px 12px;
+		width: 85%;
+	}
+	.center {
 		padding: 12px 12px;
 		width: 85%;
 	}
